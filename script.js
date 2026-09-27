@@ -446,9 +446,9 @@ const renderProducts = () => {
                         </button>
                         ${inCart ? `
                         <div style="flex: 1; display: flex; align-items: center; justify-content: space-between; background: var(--secondary-color); border-radius: var(--radius-full); padding: 4px; border: 1px solid var(--border-color);">
-                            <button onclick="updateQty(${p.id}, -1); event.stopPropagation();" style="width: 36px; height: 36px; border-radius: 50%; border: none; background: white; color: var(--primary-color); font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; box-shadow: var(--shadow-sm);">-</button>
+                            <button onclick="updateQty(${p.id}, -1); event.stopPropagation();" style="width: 36px; height: 36px; border-radius: 50%; border: none; background: var(--bg-card); color: var(--primary-color); font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; box-shadow: var(--shadow-sm);">-</button>
                             <span style="font-weight: 600; font-size: 1.1rem; color: var(--text-dark);">${cart.find(item => item.id === p.id).qty}</span>
-                            <button onclick="updateQty(${p.id}, 1); event.stopPropagation();" style="width: 36px; height: 36px; border-radius: 50%; border: none; background: var(--primary-color); color: white; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; box-shadow: var(--shadow-sm);">+</button>
+                            <button onclick="updateQty(${p.id}, 1); event.stopPropagation();" style="width: 36px; height: 36px; border-radius: 50%; border: none; background: var(--primary-color); color: var(--bg-main); font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; box-shadow: var(--shadow-sm);">+</button>
                         </div>
                         ` : `
                         <button class="btn btn-primary" style="flex: 1;" onclick="addToCart(${p.id}, event)" ${p.status.toLowerCase() !== 'available' ? 'disabled' : ''}>
@@ -536,9 +536,9 @@ const renderSingleProduct = () => {
                         </button>
                         ${inCart ? `
                         <div style="flex: 1; display: flex; align-items: center; justify-content: space-between; background: var(--secondary-color); border-radius: var(--radius-full); padding: 8px; border: 1px solid var(--border-color);">
-                            <button onclick="updateQty(${p.id}, -1); event.stopPropagation();" style="width: 44px; height: 44px; border-radius: 50%; border: none; background: white; color: var(--primary-color); font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow-sm);">-</button>
+                            <button onclick="updateQty(${p.id}, -1); event.stopPropagation();" style="width: 44px; height: 44px; border-radius: 50%; border: none; background: var(--bg-card); color: var(--primary-color); font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow-sm);">-</button>
                             <span style="font-weight: 700; font-size: 1.2rem; color: var(--text-dark);">${cart.find(item => item.id === p.id).qty} in cart</span>
-                            <button onclick="updateQty(${p.id}, 1); event.stopPropagation();" style="width: 44px; height: 44px; border-radius: 50%; border: none; background: var(--primary-color); color: white; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow-sm);">+</button>
+                            <button onclick="updateQty(${p.id}, 1); event.stopPropagation();" style="width: 44px; height: 44px; border-radius: 50%; border: none; background: var(--primary-color); color: var(--bg-main); font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow-sm);">+</button>
                         </div>
                         ` : `
                         <button class="btn btn-primary btn-large" style="flex: 1;" onclick="addToCart(${p.id}, event)" ${p.status.toLowerCase() !== 'available' ? 'disabled' : ''}>
@@ -717,9 +717,9 @@ window.renderSingleProduct = () => {
                             </button>
                             ${inCart ? `
                             <div style="flex: 1; display: flex; align-items: center; justify-content: space-between; background: var(--secondary-color); border-radius: var(--radius-full); padding: 8px; border: 1px solid var(--border-color);">
-                                <button onclick="updateQty(${p.id}, -1); event.stopPropagation();" style="width: 44px; height: 44px; border-radius: 50%; border: none; background: white; color: var(--primary-color); font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow-sm);">-</button>
+                                <button onclick="updateQty(${p.id}, -1); event.stopPropagation();" style="width: 44px; height: 44px; border-radius: 50%; border: none; background: var(--bg-card); color: var(--primary-color); font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow-sm);">-</button>
                                 <span style="font-weight: 700; font-size: 1.2rem; color: var(--text-dark);">${cart.find(item => item.id === p.id).qty} ${t('inCart')}</span>
-                                <button onclick="updateQty(${p.id}, 1); event.stopPropagation();" style="width: 44px; height: 44px; border-radius: 50%; border: none; background: var(--primary-color); color: white; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow-sm);">+</button>
+                                <button onclick="updateQty(${p.id}, 1); event.stopPropagation();" style="width: 44px; height: 44px; border-radius: 50%; border: none; background: var(--primary-color); color: var(--bg-main); font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow-sm);">+</button>
                             </div>
                             ` : `
                             <button class="btn btn-primary btn-large" style="flex: 1;" onclick="addToCart(${p.id}, event)" ${p.status.toLowerCase() !== 'available' ? 'disabled' : ''}>
@@ -749,6 +749,37 @@ document.addEventListener('DOMContentLoaded', () => {
                 heroImage.style.opacity = 1; // Fade in
             }, 500); // Wait for fade out to complete before changing src
         }, 7000); // Change banner every 7 seconds
+    }
+});
+
+
+// Theme Toggle Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
+    const savedTheme = localStorage.getItem('rtn_theme') || 'light';
+    if (savedTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        if (themeIcon) {
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+        }
+    }
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('rtn_theme', 'light');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('rtn_theme', 'dark');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            }
+        });
     }
 });
 
