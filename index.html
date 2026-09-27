@@ -32,18 +32,26 @@
             
             <nav class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link active" data-i18n="home">Home</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link" data-i18n="products">Products</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link" data-i18n="contact">Contact</a></li>
                 </ul>
                 <div class="nav-mobile-contact">
                     <a href="https://wa.me/919894252352" target="_blank" class="btn btn-primary w-full">
-                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                        <i class="fa-brands fa-whatsapp"></i> <span data-i18n="orderWhatsApp">Order on WhatsApp</span>
                     </a>
                 </div>
             </nav>
             
             <div class="header-actions">
+                <div class="lang-switch-container" style="position: relative; margin-right: 10px;">
+                    <select id="langSwitch" style="appearance: none; background: var(--secondary-color); border: 1px solid var(--border-color); border-radius: var(--radius-full); padding: 8px 32px 8px 16px; font-family: var(--font-main); font-weight: 600; color: var(--primary-color); cursor: pointer; font-size: 0.9rem; outline: none;">
+                        <option value="en">EN</option>
+                        <option value="ta">தமிழ்</option>
+                        <option value="tanglish">Tanglish</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-size: 0.7rem; pointer-events: none; color: var(--primary-color);"></i>
+                </div>
                 <button class="icon-btn" id="wishlistToggle" aria-label="View Wishlist">
                     <i class="fa-regular fa-heart"></i>
                     <span class="badge" id="wishlistBadge">0</span>
@@ -63,20 +71,20 @@
     <section class="hero" id="home">
         <div class="container hero-container">
             <div class="hero-content">
-                <span class="hero-subtitle">Premium Quality</span>
-                <h1 class="hero-title">Natural Care.<br>Healthy Skin.</h1>
-                <p class="hero-description">Discover quality skincare and beauty products from RTN Natural Skin Care. Formulated with nature's best ingredients for your radiant glow.</p>
+                <span class="hero-subtitle" data-i18n="heroSubtitle">Premium Quality</span>
+                <h1 class="hero-title" data-i18n="heroTitle">Natural Care.<br>Healthy Skin.</h1>
+                <p class="hero-description" data-i18n="heroDesc">Discover quality skincare and beauty products from RTN Natural Skin Care. Formulated with nature's best ingredients for your radiant glow.</p>
                 <div class="hero-buttons">
-                    <a href="products.html" class="btn btn-secondary">Shop Products</a>
+                    <a href="products.html" class="btn btn-secondary" data-i18n="shopProducts">Shop Products</a>
                     <a href="https://wa.me/919894252352" target="_blank" class="btn btn-primary">
-                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                        <i class="fa-brands fa-whatsapp"></i> <span data-i18n="orderWhatsApp">Order on WhatsApp</span>
                     </a>
                 </div>
             </div>
             <div class="hero-image-wrapper">
-                <img src="https://images.unsplash.com/photo-1570194065650-d99fb4b8ccb0?q=80&w=800&auto=format&fit=crop" alt="Natural Skincare Products" class="hero-image" loading="lazy">
-                <div class="floating-badge badge-1">100% Natural</div>
-                <div class="floating-badge badge-2">Cruelty Free</div>
+                <img src="images/banner 1.png" alt="Natural Skincare Products" class="hero-image" loading="lazy">
+                <div class="floating-badge badge-1" data-i18n="badge1">100% Natural</div>
+                <div class="floating-badge badge-2" data-i18n="badge2">Cruelty Free</div>
             </div>
         </div>
     </section>
@@ -86,17 +94,17 @@
     <section class="about-section" id="about">
         <div class="container about-container">
             <div class="about-image-wrapper">
-                <img src="https://images.unsplash.com/photo-1615397323114-118837e2528f?q=80&w=800&auto=format&fit=crop" alt="About RTN Natural Skin Care" class="about-image" loading="lazy">
+                <img src="images/about.png" alt="About RTN Natural Skin Care" class="about-image" loading="lazy">
             </div>
             <div class="about-content">
-                <span class="section-subtitle">About Us</span>
-                <h2>Bringing Nature's Best to Your Routine</h2>
-                <p>At <strong>RTN Natural Skin Care</strong>, we believe that true beauty comes from nature. We are a dedicated skincare and beauty product shop focused on delivering high-quality, effective, and safe products to our customers.</p>
-                <p>Our carefully curated selection is designed to nourish, protect, and enhance your natural glow. We pride ourselves on exceptional customer service and making premium beauty accessible.</p>
+                <span class="section-subtitle" data-i18n="aboutUs">About Us</span>
+                <h2 data-i18n="aboutTitle">Bringing Nature's Best to Your Routine</h2>
+                <p data-i18n="aboutP1">At <strong>RTN Natural Skin Care</strong>, we believe that true beauty comes from nature. We are a dedicated skincare and beauty product shop focused on delivering high-quality, effective, and safe products to our customers.</p>
+                <p data-i18n="aboutP2">Our carefully curated selection is designed to nourish, protect, and enhance your natural glow. We pride ourselves on exceptional customer service and making premium beauty accessible.</p>
                 <ul class="about-features">
-                    <li><i class="fa-solid fa-check"></i> Quality Ingredients</li>
-                    <li><i class="fa-solid fa-check"></i> Handpicked Selection</li>
-                    <li><i class="fa-solid fa-check"></i> Direct WhatsApp Ordering</li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="feat1">Quality Ingredients</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="feat2">Handpicked Selection</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="feat3">Direct WhatsApp Ordering</span></li>
                 </ul>
             </div>
         </div>
@@ -110,21 +118,21 @@
                 <a href="#" class="logo footer-logo">
                     <img src="images/logo.png" alt="RTN Letzz Nature Skin Care" class="logo-img">
                 </a>
-                <p>Premium skincare, beauty, and natural care products. Browse our catalog and order directly through WhatsApp.</p>
+                <p data-i18n="footerDesc">Premium skincare, beauty, and natural care products. Browse our catalog and order directly through WhatsApp.</p>
             </div>
             
             <div class="footer-links">
-                <h3>Quick Links</h3>
+                <h3 data-i18n="quickLinks">Quick Links</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="index.html#about">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" data-i18n="home">Home</a></li>
+                    <li><a href="products.html" data-i18n="products">Products</a></li>
+                    <li><a href="index.html#about" data-i18n="aboutUs">About Us</a></li>
+                    <li><a href="contact.html" data-i18n="contact">Contact</a></li>
                 </ul>
             </div>
             
             <div class="footer-contact">
-                <h3>Contact Us</h3>
+                <h3 data-i18n="contactUs">Contact Us</h3>
                 <ul>
                     <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/919894252352" target="_blank">+91 98942 52352</a></li>
                     <li><i class="fa-solid fa-envelope"></i> info@rtnnatural.com</li>
@@ -159,7 +167,7 @@
     <div class="sidebar-overlay" id="cartSidebar">
         <div class="sidebar-content">
             <div class="sidebar-header">
-                <h3><i class="fa-solid fa-cart-shopping"></i> Your Cart</h3>
+                <h3><i class="fa-solid fa-cart-shopping"></i> <span data-i18n="yourCart">Your Cart</span></h3>
                 <button class="sidebar-close" id="closeCart"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="sidebar-body" id="cartItems">
@@ -167,11 +175,11 @@
             </div>
             <div class="sidebar-footer">
                 <div class="cart-total">
-                    <span>Total:</span>
+                    <span data-i18n="total">Total:</span>
                     <span id="cartTotal">₹0</span>
                 </div>
                 <button class="btn btn-primary w-full wa-btn" id="checkoutBtn">
-                    <i class="fa-brands fa-whatsapp"></i> Order via WhatsApp
+                    <i class="fa-brands fa-whatsapp"></i> <span data-i18n="checkout">Order via WhatsApp</span>
                 </button>
             </div>
         </div>
@@ -181,7 +189,7 @@
     <div class="sidebar-overlay" id="wishlistSidebar">
         <div class="sidebar-content">
             <div class="sidebar-header">
-                <h3><i class="fa-regular fa-heart"></i> Your Wishlist</h3>
+                <h3><i class="fa-regular fa-heart"></i> <span data-i18n="yourWishlist">Your Wishlist</span></h3>
                 <button class="sidebar-close" id="closeWishlist"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="sidebar-body" id="wishlistItems">

@@ -265,6 +265,7 @@ img {
     height: 100%;
     object-fit: cover;
     aspect-ratio: 4/3;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .floating-badge {

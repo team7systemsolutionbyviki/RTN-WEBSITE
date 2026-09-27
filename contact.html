@@ -32,18 +32,26 @@
             
             <nav class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>                   
-                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link" data-i18n="home">Home</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link" data-i18n="products">Products</a></li>                   
+                    <li class="nav-item"><a href="contact.html" class="nav-link active" data-i18n="contact">Contact</a></li>
                 </ul>
                 <div class="nav-mobile-contact">
                     <a href="https://wa.me/919894252352" target="_blank" class="btn btn-primary w-full">
-                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                        <i class="fa-brands fa-whatsapp"></i> <span data-i18n="orderWhatsApp">Order on WhatsApp</span>
                     </a>
                 </div>
             </nav>
             
             <div class="header-actions">
+                <div class="lang-switch-container" style="position: relative; margin-right: 10px;">
+                    <select id="langSwitch" style="appearance: none; background: var(--secondary-color); border: 1px solid var(--border-color); border-radius: var(--radius-full); padding: 8px 32px 8px 16px; font-family: var(--font-main); font-weight: 600; color: var(--primary-color); cursor: pointer; font-size: 0.9rem; outline: none;">
+                        <option value="en">EN</option>
+                        <option value="ta">தமிழ்</option>
+                        <option value="tanglish">Tanglish</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-size: 0.7rem; pointer-events: none; color: var(--primary-color);"></i>
+                </div>
                 <button class="icon-btn" id="wishlistToggle" aria-label="View Wishlist">
                     <i class="fa-regular fa-heart"></i>
                     <span class="badge" id="wishlistBadge">0</span>
@@ -112,10 +120,10 @@
             <div class="footer-links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
+                    <li><a href="index.html" data-i18n="home">Home</a></li>
+                    <li><a href="products.html" data-i18n="products">Products</a></li>
                     <li><a href="index.html#about">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" data-i18n="contact">Contact</a></li>
                 </ul>
             </div>
             
@@ -145,7 +153,7 @@
     <div class="sidebar-overlay" id="cartSidebar">
         <div class="sidebar-content">
             <div class="sidebar-header">
-                <h3><i class="fa-solid fa-cart-shopping"></i> Your Cart</h3>
+                <h3><i class="fa-solid fa-cart-shopping"></i> <span data-i18n="yourCart">Your Cart</span></h3>
                 <button class="sidebar-close" id="closeCart"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="sidebar-body" id="cartItems">
@@ -153,11 +161,11 @@
             </div>
             <div class="sidebar-footer">
                 <div class="cart-total">
-                    <span>Total:</span>
+                    <span data-i18n="total">Total:</span>
                     <span id="cartTotal">₹0</span>
                 </div>
                 <button class="btn btn-primary w-full wa-btn" id="checkoutBtn">
-                    <i class="fa-brands fa-whatsapp"></i> Order via WhatsApp
+                    <i class="fa-brands fa-whatsapp"></i> <span data-i18n="checkout">Order via WhatsApp</span>
                 </button>
             </div>
         </div>
@@ -167,7 +175,7 @@
     <div class="sidebar-overlay" id="wishlistSidebar">
         <div class="sidebar-content">
             <div class="sidebar-header">
-                <h3><i class="fa-regular fa-heart"></i> Your Wishlist</h3>
+                <h3><i class="fa-regular fa-heart"></i> <span data-i18n="yourWishlist">Your Wishlist</span></h3>
                 <button class="sidebar-close" id="closeWishlist"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="sidebar-body" id="wishlistItems">
