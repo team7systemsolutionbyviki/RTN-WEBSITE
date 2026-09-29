@@ -433,7 +433,7 @@ const renderProducts = () => {
             card.innerHTML = `
                 <div class="product-image-container" onclick="viewProduct(${p.id})">
                     <span class="product-category-tag">${tCat(p.category)}</span>
-                    <img src="${p.image}" alt="${p.name}" class="product-img" loading="lazy">
+                    <img src="${p.image}" alt="${p.alt || 'RTN Natural ' + p.name + (p.category === 'Soaps' && !p.name.includes('Herbal') ? ' Herbal Soap' : '')}" class="product-img" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h3 class="product-title">${tProdName(p)}</h3>
@@ -499,7 +499,7 @@ const renderSingleProduct = () => {
         <div class="container" style="padding: 60px 20px;">
             <div class="product-single-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;">
                 <div class="product-single-image" style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm);">
-                    <img src="${p.image}" alt="${p.name}" style="width: 100%; height: auto; display: block; object-fit: cover; aspect-ratio: 1;">
+                    <img src="${p.image}" alt="${p.alt || 'RTN Natural ' + p.name + (p.category === 'Soaps' && !p.name.includes('Herbal') ? ' Herbal Soap' : '')}" style="width: 100%; height: auto; display: block; object-fit: cover; aspect-ratio: 1;">
                 </div>
                 <div class="product-single-info">
                     <nav class="breadcrumb" style="margin-bottom: 16px; color: var(--text-muted); font-size: 0.9rem;">
@@ -680,7 +680,7 @@ window.renderSingleProduct = () => {
             <div class="container" style="padding: 60px 20px;">
                 <div class="product-single-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;">
                     <div class="product-single-image" style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm);">
-                        <img src="${p.image}" alt="${p.name}" style="width: 100%; height: auto; display: block; object-fit: cover; aspect-ratio: 1;">
+                        <img src="${p.image}" alt="${p.alt || 'RTN Natural ' + p.name + (p.category === 'Soaps' && !p.name.includes('Herbal') ? ' Herbal Soap' : '')}" style="width: 100%; height: auto; display: block; object-fit: cover; aspect-ratio: 1;">
                     </div>
                     <div class="product-single-info">
                         <nav class="breadcrumb" style="margin-bottom: 16px; color: var(--text-muted); font-size: 0.9rem;">
