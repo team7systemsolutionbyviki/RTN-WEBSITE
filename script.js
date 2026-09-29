@@ -7,17 +7,18 @@ const WHATSAPP_NUMBER = "919894252352"; // Must be country code + number without
 // PRODUCT DATA - EDIT PRODUCTS HERE
 // ================================
 const products = [
-    { id: 1, name: "Goat Milk Soap", category: "Soaps", price: 150, image: "images/Goat Milk Soap.png", description: "Handcrafted Goat Milk Soap. Gentle Exfoliation, Deep Moisture, Soothing Care.", benefits: ["Gentle Exfoliation", "Deep Moisture"], status: "Available", usage: "For external use only." },
-    { id: 2, name: "Kuppaimeni Soap", category: "Soaps", price: 150, image: "images/Kuppaimeni Soap.png", description: "Herbal Kuppaimeni Soap. Treats Acne & Pimples, Soothes Skin Irritation.", benefits: ["Treats Acne", "Deep Pore Cleansing"], status: "Available", usage: "For external use only." },
-    { id: 3, name: "Kadukkai Soap", category: "Soaps", price: 150, image: "images/Kadukkai Soap.png", description: "Natural Kadukkai Soap. Purifies & Cleanses, Tightens Pores.", benefits: ["Purifies & Cleanses", "Even Skin Tone"], status: "Available", usage: "For external use only." },
-    { id: 4, name: "Manjistha Soap", category: "Soaps", price: 150, image: "images/Manjistha Soap.png", description: "Rich in Antioxidants. Detoxifies & Purifies, Reduces Acne.", benefits: ["Detoxifies", "Accelerates Skin Repair"], status: "Available", usage: "For external use only." },
-    { id: 5, name: "Nalangu Maavu Soap", category: "Soaps", price: 150, image: "images/Nalangu Maavu Soap.png", description: "Traditional Nalangu Maavu Soap. Improves Skin Complexion.", benefits: ["Improves Complexion", "Anti-Acne"], status: "Available", usage: "For external use only." },
-    { id: 6, name: "Body Lotion", category: "Body Care", price: 299, image: "images/Body Lotion.png", description: "Ultra-moisturizing body lotion for 24-hour hydration and smooth skin.", benefits: ["Intense moisturization", "Softens dry skin"], status: "Available", usage: "Apply generously all over the body." },
+    { id: 1, name: "Goat Milk Soap", category: "Soaps", price: 110, image: "images/Goat Milk Soap.png", description: "Handcrafted Goat Milk Soap. Gentle Exfoliation, Deep Moisture, Soothing Care.", benefits: ["Gentle Exfoliation", "Deep Moisture"], status: "Available", usage: "For external use only." },
+    { id: 2, name: "Kuppaimeni Soap", category: "Soaps", price: 85, image: "images/Kuppaimeni Soap.png", description: "Herbal Kuppaimeni Soap. Treats Acne & Pimples, Soothes Skin Irritation.", benefits: ["Treats Acne", "Deep Pore Cleansing"], status: "Available", usage: "For external use only." },
+    { id: 3, name: "Kadukkai Soap", category: "Soaps", price: 90, image: "images/Kadukkai Soap.png", description: "Natural Kadukkai Soap. Purifies & Cleanses, Tightens Pores.", benefits: ["Purifies & Cleanses", "Even Skin Tone"], status: "Available", usage: "For external use only." },
+    { id: 4, name: "Manjistha Soap", category: "Soaps", price: 90, image: "images/Manjistha Soap.png", description: "Rich in Antioxidants. Detoxifies & Purifies, Reduces Acne.", benefits: ["Detoxifies", "Accelerates Skin Repair"], status: "Available", usage: "For external use only." },
+    { id: 5, name: "Nalangu Maavu Soap", category: "Soaps", price: 75, image: "images/Nalangu Maavu Soap.png", description: "Traditional Nalangu Maavu Soap. Improves Skin Complexion.", benefits: ["Improves Complexion", "Anti-Acne"], status: "Available", usage: "For external use only." },
+    { id: 6, name: "Body Lotion", category: "Body Care", price: 85, image: "images/Body Lotion.png", description: "Ultra-moisturizing body lotion for 24-hour hydration and smooth skin.", benefits: ["Intense moisturization", "Softens dry skin"], status: "Available", usage: "Apply generously all over the body." },
     { id: 7, name: "Moisturizer", category: "Skin Care", price: 250, image: "images/Moisturizer.png", description: "Daily face moisturizer to keep your skin hydrated and glowing naturally.", benefits: ["Deep Hydration", "Non-greasy"], status: "Available", usage: "Apply on clean face daily." },
-    { id: 8, name: "Aloe Vera Gel", category: "Skin Care", price: 199, image: "images/Aloe Vera Gel.png", description: "Pure, natural aloe vera gel for everyday skin hydration and soothing care.", benefits: ["Refreshing and cooling", "Soothes irritated skin"], status: "Available", usage: "Apply a small amount to skin." },
-    { id: 9, name: "Herbal Hair Oil", category: "Hair Care", price: 349, image: "images/Herbal Hair Oil.png", description: "Nourishing herbal hair oil to promote hair growth and control hair fall.", benefits: ["Controls hair fall", "Stimulates growth"], status: "Available", usage: "Massage into scalp and hair roots." },
-    { id: 10, name: "Lip Balm Strawberry", category: "Lip Care", price: 99, image: "images/Lip Balm Strawberry.png", description: "Natural strawberry lip balm for soft, pink, and moisturized lips.", benefits: ["Heals chapped lips", "Natural strawberry tint"], status: "Available", usage: "Apply gently on lips." },
-    { id: 11, name: "Lip Balm Rose", category: "Lip Care", price: 99, image: "images/Lip Balm Rose.png", description: "Natural rose lip balm to nourish and protect dry lips with a soft floral scent.", benefits: ["Long-lasting moisture", "Softens lips"], status: "Available", usage: "Apply gently on lips." }
+    { id: 8, name: "Aloe Vera Gel 100g", category: "Skin Care", price: 75, image: "images/Aloe Vera Gel.png", description: "Pure, natural aloe vera gel for everyday skin hydration and soothing care.", benefits: ["Refreshing and cooling", "Soothes irritated skin"], status: "Available", usage: "Apply a small amount to skin." },
+    { id: 9, name: "Herbal Hair Oil 100ml", category: "Hair Care", price: 190, image: "images/Herbal Hair Oil.png", description: "Nourishing herbal hair oil to promote hair growth and control hair fall.", benefits: ["Controls hair fall", "Stimulates growth"], status: "Available", usage: "Massage into scalp and hair roots." },
+    { id: 10, name: "Lip Balm Strawberry", category: "Lip Care", price: 75, image: "images/Lip Balm Strawberry.png", description: "Natural strawberry lip balm for soft, pink, and moisturized lips.", benefits: ["Heals chapped lips", "Natural strawberry tint"], status: "Available", usage: "Apply gently on lips." },
+    { id: 11, name: "Lip Balm Rose", category: "Lip Care", price: 75, image: "images/Lip Balm Rose.png", description: "Natural rose lip balm to nourish and protect dry lips with a soft floral scent.", benefits: ["Long-lasting moisture", "Softens lips"], status: "Available", usage: "Apply gently on lips." },
+    { id: 12, name: "Saffron Gel 50g", category: "Skin Care", price: 90, image: "images/Saffron Gel.png", description: "Premium Saffron Gel for glowing and radiant skin.", benefits: ["Skin Brightening", "Reduces Pigmentation"], status: "Available", usage: "Apply a small amount to skin." }
 ];
 
 // ================================
@@ -65,10 +66,11 @@ const translations = {
         contactUs: "Contact Us"
     },
     ta: {
+        prod_12_name: "குங்குமப்பூ ஜெல் 50g",
         prod_11_name: "ரோஜா லிப் பாம்",
         prod_10_name: "ஸ்ட்ராபெரி லிப் பாம்",
-        prod_9_name: "மூலிகை முடி எண்ணெய்",
-        prod_8_name: "கற்றாழை ஜெல்",
+        prod_9_name: "மூலிகை முடி எண்ணெய் 100ml",
+        prod_8_name: "கற்றாழை ஜெல் 100g",
         prod_7_name: "ஈரப்பதமூட்டி",
         prod_6_name: "பாடி லோஷன்",
         prod_5_name: "நலங்கு மாவு சோப்பு",
@@ -115,10 +117,11 @@ const translations = {
         contactUs: "தொடர்பு கொள்ள"
     },
     tanglish: {
+        prod_12_name: "Saffron Gel 50g",
         prod_11_name: "Rose Lip Balm",
         prod_10_name: "Strawberry Lip Balm",
-        prod_9_name: "Herbal Hair Oil",
-        prod_8_name: "Aloe Vera Gel",
+        prod_9_name: "Herbal Hair Oil 100ml",
+        prod_8_name: "Aloe Vera Gel 100g",
         prod_7_name: "Moisturizer",
         prod_6_name: "Body Lotion",
         prod_5_name: "Nalangu Maavu Soap",
